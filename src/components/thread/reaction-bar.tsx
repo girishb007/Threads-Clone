@@ -24,6 +24,20 @@ const ReactionBar = ({ isLiked }: ReactionBarProps) => {
                 <Send />
             </div>
         </div>
+        /*<nav className="w-full flex justify-between items-center p-6 sticky bottom-0 bg-brand">
+        {
+          icons.map(icon => {
+            const active = path === `/${icon.name.toLowerCase()}`;
+            return (
+              <Link key={icon.name} href={`/${icon.name}`}>
+                <div className={active ? 'text-white' : 'text-gray-500'}>
+                  {icon.icon(active)}
+                </div>
+              </Link>
+            )
+          })
+        }
+      </nav>*/
     )
 }
 
